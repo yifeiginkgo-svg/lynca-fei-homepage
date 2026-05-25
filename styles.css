@@ -240,7 +240,16 @@ p {
   background: linear-gradient(120deg, rgba(72, 199, 142, 0.16), transparent 48%);
 }
 
+.raw-entry {
+  background: linear-gradient(135deg, rgba(95, 141, 247, 0.15), transparent 48%), var(--panel);
+}
+
+.raw-entry::before {
+  background: linear-gradient(120deg, rgba(95, 141, 247, 0.18), transparent 48%);
+}
+
 .metaverse-entry {
+  grid-column: 1 / -1;
   background: linear-gradient(135deg, rgba(155, 140, 255, 0.14), transparent 48%), var(--panel);
 }
 
@@ -255,6 +264,10 @@ p {
 
   .link-grid {
     grid-template-columns: 1fr;
+  }
+
+  .metaverse-entry {
+    grid-column: auto;
   }
 }
 
